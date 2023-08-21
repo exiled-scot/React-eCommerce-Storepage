@@ -6,6 +6,11 @@ This project focuses on building a dynamic website to showcase products using va
 ## Setup
 The project is installed inside a Docker container and launched with docker-compose to reduce maintenance and security concerns and simplify development.
 
+``` sh
+docker-compose up --d
+```
+This will launch the app on http://localhost:3000
+
 ## Objective
 - Set up routing in a React application using React Router.
 - Develop the application using functional components and React Hooks.
