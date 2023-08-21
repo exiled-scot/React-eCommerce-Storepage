@@ -1,4 +1,4 @@
-# Project: Creating a Website with Dynamic Routing Using React Router
+# E-Commerce Website with Dynamic Routing Using React Router
 
 ## Overview
 This project focuses on building a dynamic website to showcase products using various routing techniques. Users will be able to browse products within specific categories and retrieve relevant details for each product. It can be used as boilerplate code for ecommerce projects.
