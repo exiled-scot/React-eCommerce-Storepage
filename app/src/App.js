@@ -10,12 +10,10 @@ import Electronics from './components/Electronics';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import ProductDetails from './components/ProductDetails';
-import TitleBar from './components/TitleBar'; // Import the TitleBar component
 
 function App() {
   return (
     <>
-      <TitleBar /> {/* Add the TitleBar component */}
       <Routes>
         <Route path='/' element={<HomePage />} ></Route>
         <Route path='/category' element={<Header />} >
