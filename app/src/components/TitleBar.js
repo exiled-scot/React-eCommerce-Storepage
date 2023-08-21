@@ -16,16 +16,16 @@ const TitleBar = () => {
                             <Link className="nav-link" to="/category">Category</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/men">Men</Link>
+                          <Link className="nav-link" to="/category/men">Men</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/women">Women</Link>
+                            <Link className="nav-link" to="/category/women">Women</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/jewellery">Jewellery</Link>
+                            <Link className="nav-link" to="/category/jewellery">Jewellery</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/electronics">Electronics</Link>
+                            <Link className="nav-link" to="/category/electronics">Electronics</Link>
                         </li>
                     </ul>
                 </div>
