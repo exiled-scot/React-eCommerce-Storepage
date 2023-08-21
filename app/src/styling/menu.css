@@ -1,0 +1,142 @@
+body
+{
+  margin: 0 8px;
+}
+
+#root
+{
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /*display: flex;
+  justify-content: center;*/
+}
+
+.custom-margin
+{
+  margin: 32px 0;
+}
+
+.menu
+{
+  border-radius: 0px;
+  background-color: #043353;
+  width: 300px;
+  min-height: 100vh;
+  height: auto;
+  box-sizing: border-box;
+  color: #faf8f0;
+  padding: 15px;
+  transition: 1.0s all;
+}
+
+.full-width
+{
+  transform: translateX(0px);
+}
+
+.no-width
+{
+  transform: translateX(-308px);
+}
+
+.menu-title
+{
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu-title span
+{
+  width: 25px;
+}
+
+.menu-title span.menu-toggle
+{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #3ca59d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: calc(-15px - (37px / 2));
+  padding: 6px;
+  cursor: pointer;
+}
+
+.searchBar input
+{
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #cccbc92e;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 15px;
+  box-sizing: border-box;
+  color: #faf8f0;
+}
+
+.searchBar input::placeholder
+{
+  color: #faf8f0;
+}
+
+.searchBar input:active,.searchBar input:focus
+{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.menu-list a
+{
+  padding: 12px 0;
+  text-decoration: none;
+  color: #faf8f0;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list a span
+{
+  width: 30px;
+}
+
+.rotated
+{
+  transform: rotate(45deg);
+}
+
+.not-rotated
+{
+  transform: rotate(0deg);
+}
+
+.rotate
+{
+  animation: rotate .2s linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes rotate
+{
+  from
+  {
+    transform:rotate(0deg);
+  }
+  to
+  {
+    transform:rotate(-90deg);
+  }
+}
