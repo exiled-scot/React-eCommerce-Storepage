@@ -1,0 +1,46 @@
+
+.item {
+    background-color: purple;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.item:hover {
+    color: white;
+}
+
+.main-class {
+    background-color: purple;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding-left: 120px;
+    padding-right: 110px;
+}
+
+@media (max-width: 581px) {
+    button {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* .main-class Cart {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/*
+.cart,
+item-count {
+    color: white;
+} */
+
+/* .item-count {
+    margin-left: 2px;
+} */

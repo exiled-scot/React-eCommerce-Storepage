@@ -1,0 +1,19 @@
+.box {
+    flex-basis: 33%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        flex-basis: 100%;
+    }
+}
+
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x: hidden;
+    padding-right: 90px;
+}

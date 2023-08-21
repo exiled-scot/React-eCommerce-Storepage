@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 20rem;
+}
+
+.link {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+.card {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    /* height: 200px; */
+}
+
+.txt {
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    color: brown;
+}
+
+.main:hover {
+    color: brown;
+}

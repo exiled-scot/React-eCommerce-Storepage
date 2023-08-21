@@ -1,0 +1,38 @@
+* {
+    text-decoration: none;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    /* width: 40rem; */
+    justify-content: center;
+}
+
+.cardImg {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 1rem;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-column {
+    flex: 1;
+    text-align: left;
+}
