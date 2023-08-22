@@ -1,4 +1,5 @@
 import { FaUser, FaLanguage, FaShoppingCart } from 'react-icons/fa';
+import { GrLanguage } from 'react-icons/gr';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, Outlet } from 'react-router-dom';
@@ -10,7 +11,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        My App
+                        Trendique
                     </Link>
                     <button
                         className="navbar-toggler"
@@ -58,12 +59,13 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/language">
-                                    <FaLanguage />
+                                  <GrLanguage size={24}/>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/cart">
-                                    <FaShoppingCart />
+                                  <FaShoppingCart size={24}/>
+
                                 </a>
                             </li>
                         </ul>
