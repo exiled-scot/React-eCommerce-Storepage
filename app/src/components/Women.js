@@ -3,6 +3,7 @@ import '../styling/category.css';
 import Cards from './Card';
 import { Link } from 'react-router-dom';
 
+
 const Women = () => {
     const [products, setProducts] = useState([]);
 
@@ -14,25 +15,19 @@ const Women = () => {
     }, []);
 
 
-    return (<>
+    return (
         <div className="main-section">
             <div className="card-container">
                 {products.map(product => (
-                    <div className="box" >
-                        <Cards key={products.map(product => (
-                 <div className="box" >
-                     <Link to={`/category/women/${product.id}`} style={{ textDecoration: "none", color: 'black' }}>
-                         <Cards key={product.id} product={product} />
-                     </Link>
-                 </div>
-             ))} product={product} />
+                    <div className="box" key={product.id}>
+                        <Link to={`/category/women/${product.id}`} style={{ textDecoration: "none", color: 'black' }}>
+                            <Cards product={product} />
+                        </Link>
                     </div>
                 ))}
             </div>
         </div>
-
-    </>
     );
 }
 
-export default Women
+export default Women;
