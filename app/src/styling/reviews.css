@@ -1,0 +1,24 @@
+.review-wrapper {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.review {
+  margin-bottom: 10px;
+}
+
+.review .review-rating {
+  font-weight: bold;
+}
+
+.review .review-text {
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.reviews-statistics {
+  text-align: left;
+}
