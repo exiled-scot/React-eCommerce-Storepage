@@ -38,7 +38,7 @@ const ProductDetails = () => {
                                         <Button variant="primary">Add to Cart</Button>
                                         </div>
                                     </div>
-                                <div>
+                              <div className="product-reviews">
                                   <ProductReviews/>
                               </div>
                             </Card.Body>
