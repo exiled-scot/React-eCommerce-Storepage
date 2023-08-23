@@ -20,5 +20,34 @@
 }
 
 .reviews-statistics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: left;
+}
+
+.average-stars {
+  display: inline-flex;
+  align-items: center;
+}
+
+.star-icon {
+  margin-right: 2px;
+}
+
+.review-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.review-item .review-text {
+  margin-top: 0;
+}
+
+.review-item .username {
+  font-weight: bold;
+}
+
+.review-item .date {
+  margin-left: auto;
 }
