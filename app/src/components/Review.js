@@ -36,10 +36,10 @@ const Review = ({ username, stars, text, date }) => {
     <div className="review-wrapper">
       <div className="review">
         <div className="review-header">
-          <span className="username">{username}</span>
           <span className="stars">{renderStars()}</span>
         </div>
         <div className="review-text">{text}</div>
+          <span className="username">{username}</span>
         <div className="review-date">{date}</div>
       </div>
     </div>
