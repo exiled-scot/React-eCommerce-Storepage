@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styling/reviews.css';
 import Review from './Review';
+import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
 
 const ProductReviews = () => {
   const reviewsData = [
@@ -21,13 +22,34 @@ const ProductReviews = () => {
 
   const totalReviews = reviewsData.length;
   const totalStars = reviewsData.reduce((acc, review) => acc + review.stars, 0);
-  const averageStars = totalReviews ? Math.round(totalStars / totalReviews) : 0;
+  const averageStars = totalReviews ? Math.floor(totalStars / totalReviews) : 0;
+  const remainder = averageStars - Math.floor(averageStars);
+
+  const starIcons = [];
+  for (let i = 0; i < averageStars; i++) {
+    starIcons.push(<BsStarFill key={i} />);
+  }
+
+  if (remainder >= 0.5) {
+    starIcons.push(<BsStarHalf key={averageStars} />);
+  }
+
+  const remainingStars = 5 - starIcons.length;
+  for (let i = 0; i < remainingStars; i++) {
+    starIcons.push(<BsStar key={averageStars + i + 1} />);
+  }
 
   return (
     <div className="reviews">
       <div className="reviews-statistics">
         <h4>{totalReviews} Reviews</h4>
-        <p>Average Stars: {averageStars}</p>
+        <div className="average-stars">
+          {starIcons.map((star, index) => (
+            <span className="star-icon" key={index}>
+              {star}
+            </span>
+          ))}
+        </div>
       </div>
       {reviewsData.map((review, index) => (
         <div className="review-item" key={index}>

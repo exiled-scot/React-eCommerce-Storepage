@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../styling/ProductDetails.css';
 import { useParams } from "react-router-dom";
+import ProductReviews from "./ProductReviews";
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -35,8 +36,11 @@ const ProductDetails = () => {
                                             <b>Price: </b> {product.price}
                                         </Card.Text>
                                         <Button variant="primary">Add to Cart</Button>
+                                        </div>
                                     </div>
-                                </div>
+                                <div>
+                                  <ProductReviews/>
+                              </div>
                             </Card.Body>
                         </Card>
                     </Container>
@@ -44,6 +48,7 @@ const ProductDetails = () => {
                     <p>Loading...</p>
                 )}
             </div>
+
         </div>
     );
 };
